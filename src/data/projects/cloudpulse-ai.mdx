@@ -1,11 +1,19 @@
 ---
 title: 'CloudPulse-AI'
-description: 'Go-based observability system monitoring AI model health and system metrics with 92% drift-detection accuracy, automated CI/CD, and infrastructure-as-code.'
+description: 'Go-based observability system for AI workloads — tracks model drift, latency, and system health with 92% drift-detection accuracy and fully automated deployments.'
 image: '/project/cloudpulse-ai.png'
-technologies: ['Go', 'AWS', 'Docker', 'Terraform', 'CloudWatch', 'MLOps']
+technologies:
+  [
+    'Go',
+    'AWS CloudWatch',
+    'Docker',
+    'GitHub Actions',
+    'Terraform',
+    'CloudFormation',
+  ]
 github: 'https://github.com/MoeHamzaA/CloudPulse-AI'
 timeline: 'Ongoing'
-role: 'Cloud / MLOps Engineer'
+role: 'DevOps / Platform Engineer'
 team: 'Solo'
 status: 'completed'
 featured: true
@@ -13,31 +21,31 @@ challenges:
   [
     'Detecting model drift reliably in production',
     'Designing low-overhead metric collection in Go',
-    'Automating infrastructure with Terraform',
+    'Keeping alerting actionable without noise',
   ]
 learnings:
   [
-    'MLOps observability patterns',
+    'Observability patterns for AI workloads',
     'Go for systems tooling',
-    'AWS CloudWatch integration and IaC workflows',
+    'Infrastructure-as-code with Terraform and CloudFormation',
   ]
 isPublished: true
 ---
 
-# CloudPulse-AI: Cloud & Model Drift Monitoring
+# CloudPulse-AI: Cloud & Drift Monitoring
 
 ## Overview
 
-CloudPulse-AI is a Go-based observability system that monitors AI model health alongside system metrics. It detects model drift with **92% accuracy** and ships with automated CI/CD and infrastructure-as-code so the whole stack can be reproduced from scratch.
+CloudPulse-AI is a Go-based observability system for AI workloads. It tracks model drift, latency, and system health, using Isolation Forest anomaly detection to reach **92% drift-detection accuracy** — catching distribution shifts before they degrade production models.
 
 ## Features
 
-- Real-time monitoring of AI model health and system metrics
-- Drift detection with 92% accuracy
-- AWS CloudWatch integration for dashboards and alarms
-- Fully automated CI/CD pipeline
-- Terraform-managed infrastructure, containerized with Docker
+- Real-time monitoring of model drift, latency, and system health
+- Isolation Forest anomaly detection (92% accuracy)
+- Centralized logging and alerting through AWS CloudWatch — **70% faster incident response**
+- Automated deployments with Docker and GitHub Actions — **30% faster deployment cycles**
+- Infrastructure managed as code with Terraform and CloudFormation
 
 ## Architecture
 
-A lightweight Go agent collects model and system metrics, publishes them to CloudWatch, and a drift-detection layer flags distribution shifts in model inputs and outputs before they degrade production accuracy.
+A lightweight Go agent collects model and system metrics and publishes them to CloudWatch. A drift-detection layer flags anomalies in model inputs and outputs, with alerting wired to keep incident response fast and low-noise.

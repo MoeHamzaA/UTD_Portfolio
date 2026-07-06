@@ -3,36 +3,36 @@ import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
 import AWS from '@/components/technologies/AWS';
 import Docker from '@/components/technologies/Docker';
-import NodeJs from '@/components/technologies/NodeJs';
+import Kubernetes from '@/components/technologies/Kubernetes';
 import Python from '@/components/technologies/Python';
-import TypeScript from '@/components/technologies/TypeScript';
+import Terraform from '@/components/technologies/Terraform';
 
 // Component mapping for skills
 export const skillComponents = {
-  Python: Python,
-  AWS: AWS,
+  Kubernetes: Kubernetes,
+  Terraform: Terraform,
   Docker: Docker,
-  NodeJs: NodeJs,
-  TypeScript: TypeScript,
+  AWS: AWS,
+  Python: Python,
 };
 
 export const heroConfig = {
   // Personal Information
   name: 'Hamza Ajmal',
-  title: 'Backend, AI & Cloud engineer.',
+  title: 'DevOps Engineer.',
   avatar: '/assets/hamza.jpg',
 
   // Skills Configuration
   skills: [
     {
-      name: 'Python',
-      href: 'https://www.python.org/',
-      component: 'Python',
+      name: 'Kubernetes',
+      href: 'https://kubernetes.io/',
+      component: 'Kubernetes',
     },
     {
-      name: 'AWS',
-      href: 'https://aws.amazon.com/',
-      component: 'AWS',
+      name: 'Terraform',
+      href: 'https://developer.hashicorp.com/terraform',
+      component: 'Terraform',
     },
     {
       name: 'Docker',
@@ -40,21 +40,21 @@ export const heroConfig = {
       component: 'Docker',
     },
     {
-      name: 'Node.js',
-      href: 'https://nodejs.org/',
-      component: 'NodeJs',
+      name: 'AWS',
+      href: 'https://aws.amazon.com/',
+      component: 'AWS',
     },
     {
-      name: 'TypeScript',
-      href: 'https://www.typescriptlang.org/',
-      component: 'TypeScript',
+      name: 'Python',
+      href: 'https://www.python.org/',
+      component: 'Python',
     },
   ],
 
   // Description Configuration
   description: {
     template:
-      'I build scalable backend systems, AI-driven solutions, and cloud infrastructure with {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. Focused on <b>MLOps</b> and <b>cloud-native</b> architecture.',
+      'I build reliable CI/CD pipelines, scalable cloud infrastructure, and observability platforms with {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. DevOps Engineer at <b>General Dynamics Mission Systems–Canada</b>, incoming DevOps at <b>SOTI</b>.',
   },
 
   // Buttons Configuration
@@ -72,7 +72,7 @@ export const heroConfig = {
 export const socialLinks = [
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/hamza-ajmal-166a8228b/',
+    href: 'https://www.linkedin.com/in/hamza-ajmal1/',
     icon: <LinkedIn />,
   },
   {
@@ -82,7 +82,7 @@ export const socialLinks = [
   },
   {
     name: 'Email',
-    href: 'mailto:mhamzaajmal9@gmail.com',
+    href: 'mailto:hamzajmal@outlook.com',
     icon: <Mail />,
   },
 ];

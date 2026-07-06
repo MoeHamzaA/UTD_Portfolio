@@ -10,12 +10,13 @@ export const projects: Project[] = [
   {
     title: 'Elva',
     description:
-      "AI-powered assistant for individuals with Alzheimer's and dementia — recognizes familiar faces and identifies everyday objects using computer vision. 3rd place at HackHive 2025.",
+      "Full-stack AI assistant for Alzheimer's support — facial recognition, object detection, and NLP for real-time identification and guidance. HackHive 2025 winning project.",
     image: '/project/elva.png',
     link: 'https://github.com/MoeHamzaA/Elva',
     technologies: [
       { name: 'Python', icon: <Python key="python" /> },
       { name: 'Flask', icon: <Flask key="flask" /> },
+      { name: 'Docker', icon: <Docker key="docker" /> },
     ],
     github: 'https://github.com/MoeHamzaA/Elva',
     details: true,
@@ -25,7 +26,7 @@ export const projects: Project[] = [
   {
     title: 'CloudPulse-AI',
     description:
-      'Go-based observability system monitoring AI model health and system metrics with 92% drift-detection accuracy, automated CI/CD, and infrastructure-as-code on AWS.',
+      'Go-based observability system for AI workloads — model drift, latency, and system health with 92% drift-detection accuracy, 30% faster deployments, and 70% faster incident response.',
     image: '/project/cloudpulse-ai.png',
     link: 'https://github.com/MoeHamzaA/CloudPulse-AI',
     technologies: [
