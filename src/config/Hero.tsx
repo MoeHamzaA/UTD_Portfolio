@@ -95,12 +95,6 @@ export const heroConfig = {
   // Buttons Configuration
   buttons: [
     {
-      variant: 'outline',
-      text: 'Resume / CV',
-      href: '/resume',
-      icon: 'CV',
-    },
-    {
       variant: 'default',
       text: 'Get in touch',
       href: '/contact',
