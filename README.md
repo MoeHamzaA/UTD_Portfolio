@@ -44,7 +44,3 @@ All content is config-driven:
 - `src/config/` — hero, about, experience, projects, contact, metadata
 - `src/data/projects/` — MDX case studies for each project
 - `public/` — images (headshot, company logos, project screenshots)
-
-## Credits
-
-Based on the [sleek-portfolio](https://github.com/ramxcodes/sleek-portfolio) template by ramxcodes.
