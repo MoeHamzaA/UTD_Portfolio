@@ -12,25 +12,27 @@ export interface PageMeta {
 // Base site configuration
 export const siteConfig = {
   name: heroConfig.name,
-  title: 'Sleek Portfolio',
-  description: 'Sleek Portfolio Template by @Ramxcodes',
+  title: 'Hamza Ajmal — Portfolio',
+  description: 'Portfolio of Hamza Ajmal — backend, AI/ML, and cloud engineer.',
   url: process.env.NEXT_PUBLIC_URL || 'http://localhost:3000',
-  ogImage: '/meta/opengraph-image.png',
+  ogImage: '/assets/hamza.jpg',
   author: {
     name: about.name,
-    twitter: '@ramxcodes',
-    github: 'ramxcodes',
-    linkedin: 'ramxcodes',
-    email: 'ramxcodes@gmail.com',
+    twitter: '',
+    github: 'MoeHamzaA',
+    linkedin: 'hamza-ajmal-166a8228b',
+    email: 'mhamzaajmal9@gmail.com',
   },
   keywords: [
     'portfolio',
     'developer',
-    'full-stack',
-    'react',
-    'nextjs',
-    'typescript',
-    'web development',
+    'backend',
+    'ai',
+    'machine learning',
+    'cloud',
+    'devops',
+    'python',
+    'aws',
     heroConfig.name.toLowerCase(),
   ],
 };
@@ -47,7 +49,7 @@ export const pageMetadata: Record<string, PageMeta> = {
       'web development',
       'projects',
     ],
-    ogImage: '/meta/hero.png',
+    ogImage: '/assets/hamza.jpg',
     twitterCard: 'summary_large_image',
   },
 
@@ -57,7 +59,7 @@ export const pageMetadata: Record<string, PageMeta> = {
     description:
       "Get in touch with me for collaborations, projects, or opportunities. I'd love to hear from you!",
     keywords: ['contact', 'hire', 'collaboration', 'freelance', 'developer'],
-    ogImage: '/assets/logo.png',
+    ogImage: '/assets/hamza.jpg',
     twitterCard: 'summary',
   },
 
@@ -73,7 +75,7 @@ export const pageMetadata: Record<string, PageMeta> = {
       'software developer',
       'employment history',
     ],
-    ogImage: '/meta/work.png',
+    ogImage: '/assets/hamza.jpg',
     twitterCard: 'summary_large_image',
   },
 
@@ -89,7 +91,7 @@ export const pageMetadata: Record<string, PageMeta> = {
       'applications',
       'software',
     ],
-    ogImage: '/meta/projects.png',
+    ogImage: '/assets/hamza.jpg',
     twitterCard: 'summary_large_image',
   },
 };

@@ -7,13 +7,13 @@
 
 export const ctaConfig = {
   // Profile image settings
-  profileImage: '/assets/logo.png',
-  profileAlt: 'Profile',
+  profileImage: '/assets/hamza.jpg',
+  profileAlt: 'Hamza Ajmal',
 
   // CTA button settings
-  linkText: 'Book a Free Call',
-  calLink: 'ramxcodes/meeting',
+  linkText: 'Get in touch',
+  href: '/contact',
 
   // Pre-text message
-  preText: "Hey, you scrolled this far, let's talk.",
+  preText: "Have a project or role in mind? Let's talk.",
 };

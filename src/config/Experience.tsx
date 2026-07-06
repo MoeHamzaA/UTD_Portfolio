@@ -1,22 +1,14 @@
 import AWS from '@/components/technologies/AWS';
-import BootStrap from '@/components/technologies/BootStrap';
-import Bun from '@/components/technologies/Bun';
-import CSS from '@/components/technologies/CSS';
-import ExpressJs from '@/components/technologies/ExpressJs';
+import Docker from '@/components/technologies/Docker';
 import Figma from '@/components/technologies/Figma';
-import Html from '@/components/technologies/Html';
-import JavaScript from '@/components/technologies/JavaScript';
+import Github from '@/components/technologies/Github';
+import GoogleCloud from '@/components/technologies/GoogleCloud';
+import Kubernetes from '@/components/technologies/Kubernetes';
 import MongoDB from '@/components/technologies/MongoDB';
-import NestJs from '@/components/technologies/NestJs';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Postman from '@/components/technologies/Postman';
-import Prisma from '@/components/technologies/Prisma';
+import Python from '@/components/technologies/Python';
 import ReactIcon from '@/components/technologies/ReactIcon';
-import TailwindCss from '@/components/technologies/TailwindCss';
-import TypeScript from '@/components/technologies/TypeScript';
-import Vercel from '@/components/technologies/Vercel';
+import Terraform from '@/components/technologies/Terraform';
 
 export interface Technology {
   name: string;
@@ -44,316 +36,104 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     isCurrent: true,
-    isBlur: true,
-    company: 'good day :3',
-    position: 'Founding Frontend Engineer',
-    location: 'United States (Remote)',
-    image: '/company/promote.png',
+    company: 'AthenaGuard',
+    position: 'Software Developer',
+    location: 'Ontario, Canada',
+    image: '/company/athenaguard.jpeg',
     description: [
-      'Architected and developed the complete frontend infrastructure for the platform, a comprehensive solution for creating and managing promotional campaigns.',
-      'Led a comprehensive codebase refactoring initiative that improved maintainability, scalability, and development velocity across the entire platform.',
-      'Integrated and optimized backend API connections, implementing efficient data fetching strategies and error handling mechanisms.',
-      'Enhanced user experience and interface design through implementation of consistent design systems, accessibility standards, and performance optimizations.',
+      'Built and maintained CI/CD pipelines using GitHub Actions to automate builds, run tests, catch syntax errors, and streamline deployment workflows.',
+      'Developed automated workflows to update and audit project dependencies weekly, improving system stability and reducing security vulnerabilities.',
+      'Utilized Docker to containerize applications, ensuring consistent environments across development and production, and making the stack cloud-deployment ready.',
+      'Worked with Node.js, Python, and REST APIs, integrating secure coding practices (OWASP Top 10) and collaborating with cross-functional teams to support scalable infrastructure.',
     ],
-    startDate: 'August 2025',
+    startDate: 'May 2025',
     endDate: 'Present',
+    website: '',
     technologies: [
+      { name: 'Python', href: 'https://www.python.org/', icon: <Python /> },
+      { name: 'Node.js', href: 'https://nodejs.org/', icon: <NodeJs /> },
+      { name: 'Docker', href: 'https://www.docker.com/', icon: <Docker /> },
       {
-        name: 'Next.js',
-        href: 'https://nextjs.org/',
-        icon: <NextJs />,
-      },
-      {
-        name: 'Tailwind CSS',
-        href: 'https://tailwindcss.com/',
-        icon: <TailwindCss />,
-      },
-      {
-        name: 'TypeScript',
-        href: 'https://typescriptlang.org/',
-        icon: <TypeScript />,
-      },
-      {
-        name: 'React',
-        href: 'https://react.dev/',
-        icon: <ReactIcon />,
-      },
-      {
-        name: 'Figma',
-        href: 'https://figma.com/',
-        icon: <Figma />,
-      },
-      {
-        name: 'Vercel',
-        href: 'https://vercel.com/',
-        icon: <Vercel />,
-      },
-      {
-        name: 'AWS',
-        href: 'https://aws.amazon.com/',
-        icon: <AWS />,
-      },
-      {
-        name: 'Postman',
-        href: 'https://www.postman.com/',
-        icon: <Postman />,
-      },
-      {
-        name: 'Bun',
-        href: 'https://bun.sh/',
-        icon: <Bun />,
+        name: 'GitHub Actions',
+        href: 'https://github.com/features/actions',
+        icon: <Github />,
       },
     ],
-    website: '#',
-    github: '#',
-    x: '#',
   },
   {
     isCurrent: false,
-    company: 'Upsurge Labs',
-    position: 'Backend Developer Intern',
-    location: 'Bangalore, India (On-Site)',
-    image: '/company/upsurge.png',
+    company: 'Vosyn',
+    position: 'Cloud Engineer',
+    location: 'Ontario, Canada',
+    image: '/company/vosyn.jpeg',
     description: [
-      'Backend development for *Bhindi.io*, a flagship product of Upsurge Labs, focusing on core infrastructure and agent development.',
-      'Engineered and deployed multiple high-performance agents, enhancing product capabilities and user experience.',
-      'Testing agent functionality, authentication, automation, and system stability.',
-      'Streamlined development workflows by optimizing internal tools and maintaining detailed technical documentation.',
-    ],
-    startDate: 'June 2025',
-    endDate: 'July 2025',
-    technologies: [
-      {
-        name: 'NestJS',
-        href: 'https://nestjs.com/',
-        icon: <NestJs />,
-      },
-      {
-        name: 'Postman',
-        href: 'https://www.postman.com/',
-        icon: <Postman />,
-      },
-      {
-        name: 'TypeScript',
-        href: 'https://www.typescriptlang.org/',
-        icon: <TypeScript />,
-      },
-      {
-        name: 'Express',
-        href: 'https://expressjs.com/',
-        icon: <ExpressJs />,
-      },
-    ],
-    website: 'https://bhindi.io',
-    github: 'https://github.com/upsurgeio',
-    x: 'https://x.com/upsurgelabs',
-    linkedin: 'https://www.linkedin.com/company/upsurge-labs-pte-ltd',
-  },
-  {
-    isCurrent: false,
-    company: 'Prepeasy',
-    position: 'Founding Engineer',
-    location: 'Freelance',
-    image: '/company/prepeasy.png',
-    description: [
-      'Independently architected and developed end-to-end full-stack solutions for core product features, resulting in 95% cost reduction in AI interview services.',
-      'Single-handedly engineered and deployed a scalable AI Interview Platform, implementing real-time leaderboard analytics and automated personalized interview feedback system, reducing per-session costs from *$7* to *$0.30*.',
-      'Designed and developed comprehensive AI Resume Builder with automated optimization features, increasing user engagement by generating tailored resume recommendations and industry-specific summaries.',
-      'Built and integrated an AI-powered Cover Letter Generator with customizable templates, improving user application success rates through personalized content generation.',
-      'Engineered a complete Learning Management System (LMS) with an integrated Quiz Platform, featuring progress tracking and performance analytics.',
+      'Collaborated with the cloud engineering team to design, deploy, and manage scalable infrastructure on Google Cloud Platform (GCP).',
+      'Optimized cloud environments for performance, security, and cost-efficiency using Terraform and Kubernetes.',
+      'Contributed to internal documentation for cloud architecture and operational procedures during IPO preparation.',
+      'Researched and applied emerging trends in Cloud, DevOps, and MLOps to support AI-driven infrastructure solutions.',
+      'Engaged directly with senior leadership and the advisory board on innovative, cloud-native projects in a fast-paced startup environment.',
     ],
     startDate: 'April 2025',
     endDate: 'June 2025',
+    website: 'https://vosyn.ai',
     technologies: [
       {
-        name: 'Next.js',
-        href: 'https://nextjs.org/',
-        icon: <NextJs />,
+        name: 'Google Cloud',
+        href: 'https://cloud.google.com/',
+        icon: <GoogleCloud />,
       },
       {
-        name: 'Express',
-        href: 'https://expressjs.com/',
-        icon: <ExpressJs />,
+        name: 'Terraform',
+        href: 'https://developer.hashicorp.com/terraform',
+        icon: <Terraform />,
       },
       {
-        name: 'TypeScript',
-        href: 'https://www.typescriptlang.org/',
-        icon: <TypeScript />,
-      },
-      {
-        name: 'React',
-        href: 'https://react.dev/',
-        icon: <ReactIcon />,
-      },
-      {
-        name: 'Prisma',
-        href: 'https://www.prisma.io/',
-        icon: <Prisma />,
-      },
-      {
-        name: 'PostgreSQL',
-        href: 'https://www.postgresql.org/',
-        icon: <PostgreSQL />,
-      },
-      {
-        name: 'Vercel',
-        href: 'https://vercel.com/',
-        icon: <Vercel />,
-      },
-      {
-        name: 'AWS',
-        href: 'https://aws.amazon.com/',
-        icon: <AWS />,
-      },
-      {
-        name: 'Postman',
-        href: 'https://www.postman.com/',
-        icon: <Postman />,
-      },
-      {
-        name: 'Bun',
-        href: 'https://bun.sh/',
-        icon: <Bun />,
+        name: 'Kubernetes',
+        href: 'https://kubernetes.io/',
+        icon: <Kubernetes />,
       },
     ],
-    website: 'https://prepeasy.ai',
-    github: 'https://github.com/prepeasy',
   },
   {
     isCurrent: false,
-    company: 'Expelee',
-    position: 'SDE-1 (Full Stack) Intern',
-    location: 'Dubai, UAE (Remote)',
-    image: '/company/expelee.png',
+    company: 'Wouessi Digital',
+    position: 'Software Engineer',
+    location: 'Ontario, Canada',
+    image: '/company/wouessi.jpeg',
     description: [
-      '*Riskmitra (riskmitra.com)*: Built full-stack product with Next.js, Tailwind CSS, Framer Motion, shadcn, wallet integration, and GitBook integration.',
-      '*Core AI (core-ai.me)*: Designed and developed with Next.js, Tailwind CSS, Framer Motion, shadcn, focusing on scalability and modular UI design.',
-      '*GPU AI (gpuai.me)*: Integrated Three.js for interactive 3D elements alongside full-stack features from Core AI setup.',
-      '*Altranium (gaming.altranium.com)*: Developed immersive gaming platform using Three.js, MERN, Tailwind, and Framer Motion.',
-      '*Pars Network (parsnetwork.me)*: Engineered landing experience with MERN, Tailwind CSS, and GSAP for advanced animations and transitions.',
-      '*TEQ Network (teq-network.vercel.app)*: Designed and developed landing page using MERN, Tailwind CSS, and Web3 wallet integration.',
+      'Collaborated in a cross-functional team to develop a full-stack Employee Management System (EMS), streamlining HR operations such as onboarding, payroll, timesheets, and leave tracking.',
+      'Built and integrated core features like employee CRUD, onboarding workflows, and real-time leave and timesheet modules using Node.js and MongoDB.',
+      'Contributed to UI/UX design with Figma and React, delivering responsive, user-friendly interfaces.',
+      'Participated in testing, deployment through AWS, and Git version control, ensuring successful MVP delivery.',
     ],
-    startDate: 'Aug 2023',
-    endDate: 'April 2025',
+    startDate: 'January 2025',
+    endDate: 'March 2025',
+    website: 'https://wouessi.com',
     technologies: [
-      {
-        name: 'Bun',
-        href: 'https://bun.sh/',
-        icon: <Bun />,
-      },
-      {
-        name: 'Express',
-        href: 'https://expressjs.com/',
-        icon: <ExpressJs />,
-      },
-      {
-        name: 'Figma',
-        href: 'https://figma.com/',
-        icon: <Figma />,
-      },
-      {
-        name: 'JavaScript',
-        href: 'https://javascript.com/',
-        icon: <JavaScript />,
-      },
-      {
-        name: 'MongoDB',
-        href: 'https://mongodb.com/',
-        icon: <MongoDB />,
-      },
-      {
-        name: 'Next.js',
-        href: 'https://nextjs.org/',
-        icon: <NextJs />,
-      },
-      {
-        name: 'Node.js',
-        href: 'https://nodejs.org/',
-        icon: <NodeJs />,
-      },
-      {
-        name: 'PostgreSQL',
-        href: 'https://postgresql.org/',
-        icon: <PostgreSQL />,
-      },
-      {
-        name: 'Prisma',
-        href: 'https://prisma.io/',
-        icon: <Prisma />,
-      },
-      {
-        name: 'React',
-        href: 'https://react.dev/',
-        icon: <ReactIcon />,
-      },
-      {
-        name: 'TypeScript',
-        href: 'https://typescriptlang.org/',
-        icon: <TypeScript />,
-      },
-      {
-        name: 'Postman',
-        href: 'https://postman.com/',
-        icon: <Postman />,
-      },
-      {
-        name: 'Vercel',
-        href: 'https://vercel.com/',
-        icon: <Vercel />,
-      },
-      {
-        name: 'AWS',
-        href: 'https://aws.amazon.com/',
-        icon: <AWS />,
-      },
+      { name: 'Node.js', href: 'https://nodejs.org/', icon: <NodeJs /> },
+      { name: 'MongoDB', href: 'https://www.mongodb.com/', icon: <MongoDB /> },
+      { name: 'React', href: 'https://react.dev/', icon: <ReactIcon /> },
+      { name: 'AWS', href: 'https://aws.amazon.com/', icon: <AWS /> },
+      { name: 'Figma', href: 'https://figma.com/', icon: <Figma /> },
     ],
-    website: 'https://expelee.com',
-    x: 'https://x.com/0xExpelee',
-    linkedin: 'https://www.linkedin.com/company/expelee',
-    github: 'https://github.com/expeleeOfficial',
   },
   {
     isCurrent: false,
-    company: 'Flameloop',
-    position: 'Junior Frontend Developer',
-    location: 'Indore, India (offline)',
-    image: '/company/loop.png',
+    company: 'Santek Micro Solutions',
+    position: 'Cloud Engineer',
+    location: 'Ontario, Canada',
+    image: '/company/santek.jpeg',
     description: [
-      'Developed and maintained web applications using HTML, CSS, and JavaScript.',
-      'Collaborated with cross-functional teams to deliver high-quality software on time.',
-      'Design & Developed multiple websites for clients.',
+      'Implemented CI/CD to automate the deployment of cloud security policies including IAM roles, security groups, and WAF rules complying with ISO and NIST standards.',
+      'Developed a custom AI-powered chatbot for the company website using NLP, capable of scanning and modifying resumes based on user requests.',
+      'Utilized machine learning models to generate personalized emails and store them in a cloud database.',
     ],
-    startDate: 'June 2023',
-    endDate: 'July 2023',
-    website: 'https://flameloop.com',
+    startDate: 'January 2024',
+    endDate: 'December 2024',
+    website: '',
     technologies: [
-      {
-        name: 'HTML',
-        href: 'https://html.com/',
-        icon: <Html />,
-      },
-      {
-        name: 'CSS',
-        href: 'https://css.com/',
-        icon: <CSS />,
-      },
-      {
-        name: 'JavaScript',
-        href: 'https://javascript.com/',
-        icon: <JavaScript />,
-      },
-      {
-        name: 'Figma',
-        href: 'https://figma.com/',
-        icon: <Figma />,
-      },
-      {
-        name: 'BootStrap',
-        href: 'https://getbootstrap.com/',
-        icon: <BootStrap />,
-      },
+      { name: 'AWS', href: 'https://aws.amazon.com/', icon: <AWS /> },
+      { name: 'Python', href: 'https://www.python.org/', icon: <Python /> },
     ],
-    x: 'https://x.com/Flameloop149578',
-    linkedin: 'https://www.linkedin.com/company/flameloop',
   },
 ];

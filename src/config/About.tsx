@@ -1,26 +1,26 @@
-import Bun from '@/components/technologies/Bun';
-import JavaScript from '@/components/technologies/JavaScript';
+import AWS from '@/components/technologies/AWS';
+import Docker from '@/components/technologies/Docker';
+import Kubernetes from '@/components/technologies/Kubernetes';
 import MongoDB from '@/components/technologies/MongoDB';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
+import Python from '@/components/technologies/Python';
 import ReactIcon from '@/components/technologies/ReactIcon';
+import Terraform from '@/components/technologies/Terraform';
 import TypeScript from '@/components/technologies/TypeScript';
 
 export const mySkills = [
-  <ReactIcon key="react" />,
-  <Bun key="bun" />,
-  <JavaScript key="javascript" />,
-  <TypeScript key="typescript" />,
-  <MongoDB key="mongodb" />,
-  <NextJs key="nextjs" />,
+  <Python key="python" />,
+  <AWS key="aws" />,
+  <Docker key="docker" />,
+  <Kubernetes key="kubernetes" />,
+  <Terraform key="terraform" />,
   <NodeJs key="nodejs" />,
-  <PostgreSQL key="postgresql" />,
-  <Prisma key="prisma" />,
+  <TypeScript key="typescript" />,
+  <ReactIcon key="react" />,
+  <MongoDB key="mongodb" />,
 ];
 
 export const about = {
-  name: 'Ramkrishna Swarnkar',
-  description: `I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's.`,
+  name: 'Hamza Ajmal',
+  description: `I'm a Computer Science student at Ontario Tech University (President's List) specializing in backend development, AI-driven solutions, and cloud infrastructure. Two-time HackHive hackathon podium finisher, I love building systems that solve real-world problems.`,
 };
