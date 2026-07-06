@@ -1,0 +1,43 @@
+---
+title: 'CloudPulse-AI'
+description: 'Go-based observability system monitoring AI model health and system metrics with 92% drift-detection accuracy, automated CI/CD, and infrastructure-as-code.'
+image: '/project/cloudpulse-ai.png'
+technologies: ['Go', 'AWS', 'Docker', 'Terraform', 'CloudWatch', 'MLOps']
+github: 'https://github.com/MoeHamzaA/CloudPulse-AI'
+timeline: 'Ongoing'
+role: 'Cloud / MLOps Engineer'
+team: 'Solo'
+status: 'completed'
+featured: true
+challenges:
+  [
+    'Detecting model drift reliably in production',
+    'Designing low-overhead metric collection in Go',
+    'Automating infrastructure with Terraform',
+  ]
+learnings:
+  [
+    'MLOps observability patterns',
+    'Go for systems tooling',
+    'AWS CloudWatch integration and IaC workflows',
+  ]
+isPublished: true
+---
+
+# CloudPulse-AI: Cloud & Model Drift Monitoring
+
+## Overview
+
+CloudPulse-AI is a Go-based observability system that monitors AI model health alongside system metrics. It detects model drift with **92% accuracy** and ships with automated CI/CD and infrastructure-as-code so the whole stack can be reproduced from scratch.
+
+## Features
+
+- Real-time monitoring of AI model health and system metrics
+- Drift detection with 92% accuracy
+- AWS CloudWatch integration for dashboards and alarms
+- Fully automated CI/CD pipeline
+- Terraform-managed infrastructure, containerized with Docker
+
+## Architecture
+
+A lightweight Go agent collects model and system metrics, publishes them to CloudWatch, and a drift-detection layer flags distribution shifts in model inputs and outputs before they degrade production accuracy.

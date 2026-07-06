@@ -6,7 +6,7 @@ export interface Project {
   link: string;
   technologies: { name: string; icon: React.ReactNode }[];
   github?: string;
-  live: string;
+  live?: string;
   details: boolean;
   projectDetailsPageSlug: string;
   isWorking: boolean;
@@ -18,7 +18,7 @@ export interface ProjectCaseStudyFrontmatter {
   image: string;
   technologies: string[];
   github: string;
-  live: string;
+  live?: string;
   timeline: string;
   role: string;
   team?: string;
