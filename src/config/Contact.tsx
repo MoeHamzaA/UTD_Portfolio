@@ -6,18 +6,18 @@ export const contactConfig = {
   title: 'Contact',
   description:
     "Have a project, role, or idea in mind? Reach out directly — I'll get back to you as soon as possible.",
-  email: 'mhamzaajmal9@gmail.com',
+  email: 'hamzajmal@outlook.com',
   links: [
     {
       name: 'Email',
-      value: 'mhamzaajmal9@gmail.com',
-      href: 'mailto:mhamzaajmal9@gmail.com',
+      value: 'hamzajmal@outlook.com',
+      href: 'mailto:hamzajmal@outlook.com',
       icon: <Mail />,
     },
     {
       name: 'LinkedIn',
-      value: 'in/hamza-ajmal-166a8228b',
-      href: 'https://www.linkedin.com/in/hamza-ajmal-166a8228b/',
+      value: 'in/hamza-ajmal1',
+      href: 'https://www.linkedin.com/in/hamza-ajmal1/',
       icon: <LinkedIn />,
     },
     {

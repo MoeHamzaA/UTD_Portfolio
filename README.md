@@ -1,11 +1,12 @@
 # Hamza Ajmal — Portfolio
 
-Personal portfolio of **Hamza Ajmal** — backend, AI/ML, and cloud engineer.
-Computer Science student at Ontario Tech University.
+Personal portfolio of **Hamza Ajmal** — DevOps engineer focused on CI/CD,
+cloud infrastructure, Kubernetes, Terraform, and observability. Computer
+Science student at Ontario Tech University.
 
 - **GitHub:** [MoeHamzaA](https://github.com/MoeHamzaA)
-- **LinkedIn:** [hamza-ajmal-166a8228b](https://www.linkedin.com/in/hamza-ajmal-166a8228b/)
-- **Email:** mhamzaajmal9@gmail.com
+- **LinkedIn:** [hamza-ajmal1](https://www.linkedin.com/in/hamza-ajmal1/)
+- **Email:** hamzajmal@outlook.com
 
 ## Tech Stack
 
