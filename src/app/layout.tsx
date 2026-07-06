@@ -1,6 +1,7 @@
 import UmamiAnalytics from '@/components/analytics/UmamiAnalytics';
 import Footer from '@/components/common/Footer';
 import Navbar from '@/components/common/Navbar';
+import PeoniaAnimation from '@/components/common/PeoniaAnimation';
 import { ThemeProvider } from '@/components/common/ThemeProviders';
 import { generateMetadata as getMetadata } from '@/config/Meta';
 import ReactLenis from 'lenis/react';
@@ -26,6 +27,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <ReactLenis root>
+              <PeoniaAnimation />
               <Navbar />
               {children}
               <Footer />
