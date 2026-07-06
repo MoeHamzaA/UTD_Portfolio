@@ -1,5 +1,4 @@
 import Container from '@/components/common/Container';
-import ContactForm from '@/components/contact/ContactForm';
 import { Separator } from '@/components/ui/separator';
 import { contactConfig } from '@/config/Contact';
 import { generateMetadata as getMetadata } from '@/config/Meta';
@@ -36,9 +35,25 @@ export default function ContactPage() {
         </div>
         <Separator />
 
-        {/* Contact Form */}
-        <div className="mx-auto max-w-2xl">
-          <ContactForm />
+        {/* Contact Links */}
+        <div className="mx-auto grid max-w-2xl gap-4">
+          {contactConfig.links.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+              rel="noopener noreferrer"
+              className="hover:bg-muted/50 flex items-center gap-4 rounded-md border border-dashed border-black/20 p-4 transition-colors dark:border-white/10"
+            >
+              <span className="size-6 shrink-0">{link.icon}</span>
+              <div className="min-w-0">
+                <p className="font-semibold">{link.name}</p>
+                <p className="text-muted-foreground truncate text-sm">
+                  {link.value}
+                </p>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </Container>

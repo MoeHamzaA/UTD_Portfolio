@@ -1,22 +1,30 @@
+import Github from '@/components/svgs/Github';
+import LinkedIn from '@/components/svgs/LinkedIn';
+import Mail from '@/components/svgs/Mail';
+
 export const contactConfig = {
   title: 'Contact',
   description:
-    'Get in touch with me. I will get back to you as soon as possible.',
-  form: {
-    labels: {
-      name: 'Name',
-      email: 'Email',
-      phone: 'Phone Number',
-      message: 'Message',
+    "Have a project, role, or idea in mind? Reach out directly — I'll get back to you as soon as possible.",
+  email: 'mhamzaajmal9@gmail.com',
+  links: [
+    {
+      name: 'Email',
+      value: 'mhamzaajmal9@gmail.com',
+      href: 'mailto:mhamzaajmal9@gmail.com',
+      icon: <Mail />,
     },
-    placeholders: {
-      name: 'Your name',
-      email: 'your.email@example.com',
-      phone: '+1 (555) 123-4567',
-      message: 'Tell me about your project...',
+    {
+      name: 'LinkedIn',
+      value: 'in/hamza-ajmal-166a8228b',
+      href: 'https://www.linkedin.com/in/hamza-ajmal-166a8228b/',
+      icon: <LinkedIn />,
     },
-    submitButton: 'Send Message',
-    successMessage: "Thanks for your message! I'll get back to you soon.",
-    errorMessage: 'Something went wrong. Please try again.',
-  },
+    {
+      name: 'GitHub',
+      value: 'MoeHamzaA',
+      href: 'https://github.com/MoeHamzaA',
+      icon: <Github />,
+    },
+  ],
 };
