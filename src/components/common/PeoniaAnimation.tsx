@@ -1,5 +1,6 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import type p5 from 'p5';
 import { useEffect, useRef } from 'react';
 
@@ -37,6 +38,10 @@ function loadP5(): Promise<typeof p5> {
  */
 export default function PeoniaAnimation() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+  // Below xl the flower sits beside the hero avatar, which only exists on
+  // the homepage; the desktop gutter rail shows everywhere.
+  const isHome = pathname === '/';
 
   useEffect(() => {
     const node = containerRef.current;
@@ -860,7 +865,9 @@ export default function PeoniaAnimation() {
     <div
       ref={containerRef}
       aria-hidden
-      className="pointer-events-none absolute top-0 left-0 -z-10 h-svh w-[85vw] opacity-40 xl:fixed xl:h-screen xl:w-[calc((100vw-48rem)/2)] xl:opacity-100"
+      className={`pointer-events-none absolute top-24 right-2 -z-10 h-48 w-[55vw] xl:fixed xl:top-0 xl:right-auto xl:left-0 xl:h-screen xl:w-[calc((100vw-48rem)/2)] ${
+        isHome ? '' : 'hidden xl:block'
+      }`}
     />
   );
 }
