@@ -161,6 +161,9 @@ export default function PeoniaAnimation() {
           p.setup = function () {
             p.createCanvas(node.offsetWidth, node.offsetHeight);
             p.pixelDensity(1);
+            // Below the xl breakpoint the flower is a faint backdrop; halve
+            // the frame rate to go easy on phone batteries.
+            if (window.innerWidth < 1280) p.frameRate(30);
             p.textFont('Courier New, monospace');
             p.textAlign(p.CENTER, p.CENTER);
             p.noStroke();
@@ -857,7 +860,7 @@ export default function PeoniaAnimation() {
     <div
       ref={containerRef}
       aria-hidden
-      className="pointer-events-none fixed top-0 left-0 hidden h-screen w-[calc((100vw-48rem)/2)] xl:block"
+      className="pointer-events-none absolute top-0 left-0 -z-10 h-svh w-[85vw] opacity-40 xl:fixed xl:h-screen xl:w-[calc((100vw-48rem)/2)] xl:opacity-100"
     />
   );
 }
