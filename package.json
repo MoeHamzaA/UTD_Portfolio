@@ -113,6 +113,6 @@
     "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.4",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   }
 }
