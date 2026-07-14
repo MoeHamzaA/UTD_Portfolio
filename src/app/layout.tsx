@@ -4,6 +4,7 @@ import Navbar from '@/components/common/Navbar';
 import PeoniaAnimation from '@/components/common/PeoniaAnimation';
 import { ThemeProvider } from '@/components/common/ThemeProviders';
 import { generateMetadata as getMetadata } from '@/config/Meta';
+import { Analytics } from '@vercel/analytics/next';
 import ReactLenis from 'lenis/react';
 import { ViewTransitions } from 'next-view-transitions';
 
@@ -32,6 +33,7 @@ export default function RootLayout({
               {children}
               <Footer />
               <UmamiAnalytics />
+              <Analytics />
             </ReactLenis>
           </ThemeProvider>
         </body>
