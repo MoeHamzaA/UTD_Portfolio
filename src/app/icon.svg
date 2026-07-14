@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .badge { fill: #171717; }
+    .mono { stroke: #fafafa; }
+    .ring { stroke: #fafafa; }
+    @media (prefers-color-scheme: dark) {
+      .badge { fill: #fafafa; }
+      .mono { stroke: #171717; }
+      .ring { stroke: #171717; }
+    }
+  </style>
+  <circle class="badge" cx="32" cy="32" r="32" />
+  <circle class="ring" cx="32" cy="32" r="31" fill="none" stroke-opacity="0.12" stroke-width="1" />
+  <g class="mono" fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 22 V42 M25 22 V42 M16 32 H25" />
+    <path d="M38 42 L44 22 L50 42 M40.2 35 H47.8" />
+  </g>
+</svg>
